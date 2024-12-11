@@ -11,7 +11,7 @@ class RectangleTestCase(unittest.TestCase):
         res = area(10, 10)
         self.assertEqual(res, 100)
 
-    def test_error_mul(self):  # Отрицательная величина
+    def test_error_mul(self):  # Отрицательная величина в area
         res = area(-5, 10)
         with self.assertRaises(ValueError):
             area(-5, 10)
