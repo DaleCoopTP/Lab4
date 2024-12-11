@@ -11,6 +11,10 @@ class RectangleTestCase(unittest.TestCase):
         res = area(10, 10)
         self.assertEqual(res, 100)
 
+    def test_error_mul(self):
+        res = area(3, 4)
+        self.assertEqual(res, 15)
+
 
 if __name__ == '__main__':
     unittest.main()
