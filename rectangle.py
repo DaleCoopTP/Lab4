@@ -7,6 +7,6 @@ def area(length, width):
         width (int) - второе десятичное число(ширина)
 
     Возвращаемое значение:
-        Площадь прямоугольника - lenght * width (int)
+        Площадь прямоугольника - lenght * width (int).
     """
     return length * width
