@@ -12,8 +12,13 @@ class RectangleTestCase(unittest.TestCase):
         self.assertEqual(res, 100)
 
     def test_error_mul(self):  # Отрицательная величина
-        res = area(-1, 4)
-        self.assertEqual(res, "Error")
+        res = area(-5, 10)
+        with self.assertRaises(ValueError):
+            area(-5, 10)
+        with self.assertRaises(ValueError):
+            area(10, -5)
+        with self.assertRaises(ValueError):
+            area(-5, -10)
 
 if __name__ == '__main__':
     unittest.main()
