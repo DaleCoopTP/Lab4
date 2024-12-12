@@ -17,7 +17,7 @@ class RectangleTestCase(unittest.TestCase):
             area(-5, 10)
         with self.assertRaises(ValueError):
             area(10, -5)
-        with self.assertRaises(ValueError):
+        with self.assertRaises(ValueError): # 123
             area(-5, -10)
 
 if __name__ == '__main__':
